@@ -6,9 +6,7 @@ int main(int argc, char **argv)
 	start_data_t start_data;
 	thread_t *threads = NULL;
 
-	struct timeval time;
-
-//	struct timeval time2;
+	struct timeval time3;
 	if (argc == 5 || argc == 6)
 	{
 		if (start_parse_args(argv, &start_data))
@@ -19,13 +17,13 @@ int main(int argc, char **argv)
 		printf("Input correct arguments\n");
 		return (FAIL);
 	}
-	threads = fill_thread(threads, start_data.number_phil);
-	gettimeofday(&time, 0);
-
+	threads = fill_thread(threads, &start_data);
+	init_monitor(threads, &start_data);
+//	return init_monitor(threads, &start_data);
 //	printf("time1 = %d\n", time.tv_usec);
 
-//	usleep(5100000);
-//	gettimeofday(&time2, 0);
+	gettimeofday(&time3, 0);
+
 //	printf("time2 = %d\n", time2.tv_usec);
 
 //	printf("time - time = %ld\n", ((time2.tv_sec * 1000000) + time2.tv_usec) - ((time.tv_sec * 1000000) + time.tv_usec));
