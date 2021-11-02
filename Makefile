@@ -1,5 +1,5 @@
 
-SRC_FILES = main.c args_handling.c thread_create.c
+SRC_FILES = main.c args_handling.c thread_create.c thread_handler.c
 
 SRC_DIR = srcs/
 

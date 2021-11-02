@@ -18,16 +18,16 @@ int main(int argc, char **argv)
 		return (FAIL);
 	}
 	threads = fill_thread(threads, &start_data);
-	init_monitor(threads, &start_data);
+	return init_monitor(threads, &start_data);
 //	return init_monitor(threads, &start_data);
-//	printf("time1 = %d\n", time.tv_usec);
+//	printf("time1 = %d\n", birth_time.tv_usec);
 
 	gettimeofday(&time3, 0);
 
 //	printf("time2 = %d\n", time2.tv_usec);
 
-//	printf("time - time = %ld\n", ((time2.tv_sec * 1000000) + time2.tv_usec) - ((time.tv_sec * 1000000) + time.tv_usec));
-//	printf("%ld\n", ((time2.tv_sec * 1000000) + time2.tv_usec) - ((time.tv_sec * 1000000) + time.tv_usec));
+//	printf("birth_time - birth_time = %ld\n", ((time2.tv_sec * 1000000) + time2.tv_usec) - ((birth_time.tv_sec * 1000000) + birth_time.tv_usec));
+//	printf("%ld\n", ((time2.tv_sec * 1000000) + time2.tv_usec) - ((birth_time.tv_sec * 1000000) + birth_time.tv_usec));
 //	if (argc == 5)
 //		start_five_args(argv);
 //	else if (argc == 6)

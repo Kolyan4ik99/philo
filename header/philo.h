@@ -26,25 +26,28 @@
 # define SEC MICROSEC * 1000
 
 typedef struct	start_data_s {
-	int			number_phil;
-	long		tt_die;
-	long		tt_eat;
-	long		tt_sleep;
-	long		count_te;
+	int				number_phil;
+	long			tt_die;
+	long			tt_eat;
+	long			tt_sleep;
+	long			count_te;
+	int				flag;
 	pthread_mutex_t	*forks;
-	struct timeval	time;
+	struct timeval	birth_time;
 }				start_data_t;
 
 typedef struct		thread_s {
 	long			id;
 	pthread_t		pthread;
-	pthread_mutex_t left_fork;
-	pthread_mutex_t right_fork;
-	pthread_mutex_t	*start;
+	pthread_mutex_t *left_fork;
+	pthread_mutex_t *right_fork;
 	long			life_time;
-	int				action;
-	long			tt_eat;
-	long			time;
+	start_data_t	*data;
+	struct timeval	time;
+	struct timeval	last_eat_time;
+	long			counts_eat;
+	int				end;
+	int				eating;
 }					thread_t;
 
 /* main */
@@ -57,10 +60,18 @@ int			start_parse_args(char **argv, start_data_t *start_data);
 /* thread_create.c */
 void		*create_thread(void *param);
 thread_t	*fill_thread(thread_t *threads, start_data_t *data);
-void		print_action(thread_t *thread);
-int			init_monitor(thread_t *thread, start_data_t *startData);
+int		start_thread(thread_t *threads, start_data_t *data);
 
-void	take_fork(thread_t *thread, struct timeval time);
-void	put_fork(thread_t *thread, struct timeval time);
+void	take_fork(thread_t *thread);
+void	put_fork(thread_t *thread);
+
+long	count_time(struct timeval left_time, struct timeval right_time);
+
+/* thread_handler.c */
+//void		print_action(thread_t *thread);
+void		print_action(long id, long time, int action);
+int			init_monitor(thread_t *thread, start_data_t *data);
+
+void	ft_usleep(long tt_sleep);
 
 #endif

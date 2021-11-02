@@ -8,6 +8,7 @@ static void fill_null(start_data_t *start_data)
 	start_data->tt_eat = 0;
 	start_data->tt_sleep = 0;
 	start_data->count_te = 0;
+	start_data->flag = 0;
 }
 
 static int check_data(start_data_t *start_data)
@@ -18,14 +19,14 @@ static int check_data(start_data_t *start_data)
 	return (0);
 }
 
-//static void	print_data(start_data_t *start_data)
-//{
-//	printf("number_phil = %d\n", start_data->number_phil);
-//	printf("tt_die = %ld\n", start_data->tt_die);
-//	printf("tt_eat = %ld\n", start_data->tt_eat);
-//	printf("tt_sleep = %ld\n", start_data->tt_sleep);
-//	printf("tt_eat = %ld\n", start_data->tt_eat);
-//}
+static void	print_data(start_data_t *start_data)
+{
+	printf("number_phil = %d\n", start_data->number_phil);
+	printf("tt_die = %ld\n", start_data->tt_die);
+	printf("tt_eat = %ld\n", start_data->tt_eat);
+	printf("tt_sleep = %ld\n", start_data->tt_sleep);
+	printf("count_te = %ld\n", start_data->count_te);
+}
 
 int		start_parse_args(char **argv, start_data_t *start_data)
 {
@@ -34,7 +35,7 @@ int		start_parse_args(char **argv, start_data_t *start_data)
 		return (FAIL);
 	if (check_data(start_data))
 		return (FAIL);
-//	print_data(start_data);
+	print_data(start_data);
 	return (SUCCESS);
 }
 
@@ -87,8 +88,10 @@ int		fill_start_data(start_data_t *start_data, char **argv)
 		return (FAIL);
 	if (i == 6)
 	{
-		if (!start_data->count_te)
+		start_data->flag = 1;
+		if (!start_data->count_te) {
 			return (FAIL);
+		}
 	}
 	return (SUCCESS);
 }

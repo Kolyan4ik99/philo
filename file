@@ -1,0 +1,146 @@
+number_phil = 4
+tt_die = 700
+tt_eat = 150
+tt_sleep = 100
+count_te = 7
+0 2 has taken a fork
+0 2 has taken a fork
+0 2 is eating
+0 4 has taken a fork
+0 4 has taken a fork
+0 4 is eating
+149 4 is sleeping
+149 1 has taken a fork
+149 1 has taken a fork
+149 1 is eating
+149 2 is sleeping
+149 3 has taken a fork
+149 3 has taken a fork
+149 3 is eating
+249 2 is thinking
+249 4 is thinking
+299 1 is sleeping
+299 2 has taken a fork
+299 2 has taken a fork
+299 2 is eating
+299 4 has taken a fork
+299 4 has taken a fork
+299 4 is eating
+299 3 is sleeping
+399 3 is thinking
+399 1 is thinking
+449 2 is sleeping
+449 3 has taken a fork
+449 1 has taken a fork
+449 1 has taken a fork
+449 1 is eating
+449 4 is sleeping
+449 3 has taken a fork
+449 3 is eating
+549 4 is thinking
+549 2 is thinking
+599 1 is sleeping
+599 2 has taken a fork
+599 4 has taken a fork
+599 4 has taken a fork
+599 4 is eating
+599 3 is sleeping
+599 2 has taken a fork
+599 2 is eating
+699 1 is thinking
+699 3 is thinking
+749 4 is sleeping
+749 1 has taken a fork
+749 1 has taken a fork
+749 1 is eating
+749 3 has taken a fork
+749 3 has taken a fork
+749 3 is eating
+749 2 is sleeping
+849 4 is thinking
+849 2 is thinking
+899 1 is sleeping
+899 2 has taken a fork
+899 4 has taken a fork
+899 3 is sleeping
+899 4 has taken a fork
+899 4 is eating
+899 2 has taken a fork
+899 2 is eating
+999 1 is thinking
+999 3 is thinking
+1049 2 is sleeping
+1049 4 is sleeping
+1049 3 has taken a fork
+1049 3 has taken a fork
+1049 3 is eating
+1049 1 has taken a fork
+1049 1 has taken a fork
+1049 1 is eating
+1149 4 is thinking
+1149 2 is thinking
+1199 1 is sleeping
+1199 3 is sleeping
+1199 2 has taken a fork
+1199 2 has taken a fork
+1199 2 is eating
+1199 4 has taken a fork
+1199 4 has taken a fork
+1199 4 is eating
+1299 3 is thinking
+1299 1 is thinking
+1349 4 is sleeping
+1349 1 has taken a fork
+1349 1 has taken a fork
+1349 1 is eating
+1349 2 is sleeping
+1349 3 has taken a fork
+1349 3 has taken a fork
+1349 3 is eating
+1449 4 is thinking
+1449 2 is thinking
+1499 1 is sleeping
+1499 3 is sleeping
+1499 2 has taken a fork
+1499 2 has taken a fork
+1499 2 is eating
+1499 4 has taken a fork
+1499 4 has taken a fork
+1499 4 is eating
+1599 1 is thinking
+1599 3 is thinking
+1649 4 is sleeping
+1649 2 is sleeping
+1649 3 has taken a fork
+1649 3 has taken a fork
+1649 3 is eating
+1649 1 has taken a fork
+1649 1 has taken a fork
+1649 1 is eating
+1749 4 is thinking
+1749 2 is thinking
+1799 3 is sleeping
+1799 4 has taken a fork
+1799 4 has taken a fork
+1799 4 is eating
+1799 2 has taken a fork
+1799 2 has taken a fork
+1799 2 is eating
+1799 1 is sleeping
+1899 1 is thinking
+1899 3 is thinking
+1949 2 is sleeping
+1949 3 has taken a fork
+1949 3 has taken a fork
+1949 3 is eating
+1949 1 has taken a fork
+1949 1 has taken a fork
+1949 1 is eating
+1949 4 is sleeping
+2049 4 is thinking
+2049 2 is thinking
+2099 3 is sleeping
+2099 1 is sleeping
+2199 1 is thinking
+2199 3 is thinking
+2900 1 died
